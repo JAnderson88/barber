@@ -1,0 +1,145 @@
+:root{
+  --slider-starting-point: 34vw;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header{
+  border-bottom: 1px solid black;
+  margin: 4vh auto;
+  min-height: 25vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12vw;
+  z-index: 0;
+}
+
+header div{
+  margin: 4vh;
+}
+
+header span{
+  border-top: 1px solid black;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display:flex;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  text-align: center;
+}
+
+header span a{
+  border-right: 1px solid black;
+  flex:1;
+  font-size: 12px;
+  min-height: inherit;
+  line-height: 10vh;
+}
+header span a:first-child{
+  border-left: 1px solid black;
+}
+
+main p{
+  margin: 8vh 7vw;
+  text-align: center;
+  z-index: 1;
+}
+
+main .image375x375{
+  background-image: url("https://via.placeholder.com/375x375");
+  min-height: 375px;
+}
+
+.parallax-section {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
+
+main .slider{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  min-height: 20vh;
+  max-height: 45vh;
+  padding-left: 0vw;
+  white-space: nowrap;
+}
+
+main .slider_button_1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  min-width: 10vw;
+  min-height: 45vh;
+  background-color: white;
+  z-index: 1;
+}
+
+main .slider_button_2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  min-width: 10vw;
+  min-height: 45vh;
+  background-color: white;
+  z-index: 1;
+}
+
+main .slider .spots{
+  min-width: 300px;
+  max-width: var(--slider-starting-point);
+  min-height: 20vh;
+  max-height: 44vh;
+  margin-right: 5vw;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  transition: all 0.5s;
+}
+
+main .slider .spot1{
+  transform: translateX(calc(var(--slider-starting-point) - (0 * 39.4vw)));
+}
+main .slider .spot2{
+  transform: translateX(calc(var(--slider-starting-point) - (1 * 39.4vw)));
+}
+main .slider .spot3{
+  transform: translateX(calc(var(--slider-starting-point) - (2 * 39.4vw)));
+}
+main .slider .spot4{
+  transform: translateX(calc(var(--slider-starting-point) - (3 * 39.4vw)));
+}
+main .slider .spot5{
+  transform: translateX(calc(var(--slider-starting-point) - (4 * 39.4vw)));
+}
+main .slider .spot6{
+  transform: translateX(calc(var(--slider-starting-point) - (5 * 39.4vw)));
+}
+main .slider .spot7{
+  transform: translateX(calc(var(--slider-starting-point) - (6 * 39.4vw)));}
+
+footer{
+  border-top: 3px solid black;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 50vh;
+  padding: 0 20vw;
+  background-color: rgba(91, 91, 91, 0.6);
+  display: flex;
+  flex-wrap: nowrap;
+}
